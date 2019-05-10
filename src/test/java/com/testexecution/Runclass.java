@@ -19,7 +19,7 @@ public class Runclass extends Web_Common_Methods {
 	@Test(priority=0)
 	public static void mainexecution() throws IOException
 	{
-		
+		driver.manage().window().maximize();
 		driver = Web_Common_Methods.getbrowser("Chrome");
 		//Web_Common_Methods.closebrowser();
 		appcls = PageFactory.initElements(driver, Webcls.class);
